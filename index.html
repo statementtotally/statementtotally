@@ -9,6 +9,40 @@
 <meta property="og:title" content="Bank Statement to Tally XML Converter — Free, Private">
 <meta property="og:description" content="Drag your bank statement PDF into the press, download Tally-ready XML. No signup, no upload.">
 <meta property="og:type" content="website">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="canonical" href="https://statementtotally.github.io/statementtotally/">
+<meta name="theme-color" content="#5B5BF0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:url" content="https://statementtotally.github.io/statementtotally/">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bank Statement to Tally XML Converter — Free, Private">
+<meta name="twitter:description" content="Convert a bank statement PDF to Tally-ready XML in your browser. Free, no signup, no upload.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "StatementToTally",
+  "url": "https://statementtotally.github.io/statementtotally/",
+  "description": "Free online converter that turns a bank statement PDF into Tally-ready XML for TallyPrime and Tally.ERP 9. Runs in your browser; the statement is never uploaded.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any (web browser)",
+  "browserRequirements": "Requires JavaScript",
+  "inLanguage": "en-IN",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "featureList": [
+    "Bank statement PDF to Tally XML",
+    "Works with ICICI, HDFC, SBI, Axis, Kotak, PNB, Bank of Baroda and more",
+    "Runs in your browser - no upload, no signup",
+    "Balance check against the bank statement",
+    "Skip transactions already entered in Tally"
+  ]
+}
+</script>
 <meta property="og:site_name" content="StatementToTally">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -282,6 +316,9 @@
   .steps li::before{content:counter(s);position:absolute;left:16px;top:12px;width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;color:#fff;background:linear-gradient(140deg,var(--coral),var(--indigo));}
   .steps b{color:var(--ink);} .steps kbd{font-family:'DM Mono',monospace;font-size:12px;background:#fff;border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:1px 7px;}
   .tip{margin-top:16px;padding:13px 16px;border-radius:14px;background:var(--amber-bg);color:#7a5314;font-size:12.5px;line-height:1.6;}
+  .guide p.lead{font-size:13.5px;line-height:1.7;color:var(--muted);margin:12px 0 0;}
+  .guide h3.mini{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px;margin:20px 0 6px;}
+  .seo-list{margin:8px 0 0;padding-left:20px;font-size:13px;line-height:1.75;color:var(--muted);}
   .faq{margin-top:26px;display:grid;gap:10px;}
   .faq details{background:var(--soft);border-radius:14px;padding:14px 18px;}
   .faq summary{cursor:pointer;font-weight:700;font-size:13.5px;list-style:none;display:flex;justify-content:space-between;gap:10px;}
@@ -503,7 +540,28 @@
       <details><summary>Why does it ask for a Suspense ledger?</summary><p>Every transaction is posted between your bank ledger and one ledger of your choice (Suspense Account by default). You can later reclassify entries in Tally.</p></details>
       <details><summary>Does it work for scanned or photo PDFs?</summary><p>No. It needs a normal bank-generated PDF where you can select the text.</p></details>
       <details><summary>My bank's PDF doesn't convert. What now?</summary><p>Tap <b>Need help?</b> and tell us the bank name. We add support for new formats regularly.</p></details>
+      <details><summary>Is StatementToTally really free?</summary><p>Yes. There is no signup, no payment and nothing to install. You open the page, pick your bank, drop in the PDF and download the XML.</p></details>
+      <details><summary>Which banks does it support?</summary><p>ICICI, HDFC, SBI, Axis, Canara, IDFC FIRST, Kotak Mahindra, Punjab National Bank, Bank of Baroda, Yes Bank, IndusInd, Union Bank, IDBI, Federal Bank, RBL and UCO Bank. Choose yours in Step 1. If your bank is not listed, try “Other / Not listed”.</p></details>
+      <details><summary>Does it work with TallyPrime and Tally.ERP 9?</summary><p>Yes. The XML imports into both. The exact import steps for each are in the guide above.</p></details>
+      <details><summary>Can I convert a password-protected bank statement PDF?</summary><p>Yes. If the PDF is locked the tool asks for the password. It is used only inside your browser and is never sent anywhere.</p></details>
+      <details><summary>I already entered some transactions in Tally. Can I skip them?</summary><p>Yes. Use the “Already entered in Tally?” box: type the date and amount of the last entry you posted and the tool exports only the rows after it.</p></details>
     </div>
+  </section>
+
+  <section class="guide" id="supported-banks">
+    <h2>Bank statement to Tally XML converter for Indian banks</h2>
+    <div class="sub">Free · no signup · works in your browser</div>
+    <p class="lead">StatementToTally turns a bank statement PDF into an XML file that TallyPrime and Tally.ERP 9 can import as vouchers, so you do not have to type each entry by hand. It is built for accountants, CAs and small businesses who reconcile bank statements every month.</p>
+    <h3 class="mini">Supported banks</h3>
+    <p class="lead" style="margin-top:0;">ICICI Bank, HDFC Bank, State Bank of India (SBI), Axis Bank, Canara Bank, IDFC FIRST Bank, Kotak Mahindra Bank, Punjab National Bank, Bank of Baroda, Yes Bank, IndusInd Bank, Union Bank of India, IDBI Bank, Federal Bank, RBL Bank and UCO Bank. Other banks can be tried with the “Other / Not listed” option.</p>
+    <h3 class="mini">Why people use it</h3>
+    <ul class="seo-list">
+      <li><b>Free:</b> no signup, no payment, nothing to install.</li>
+      <li><b>Private:</b> the PDF is read inside your browser and is never uploaded.</li>
+      <li><b>Balance check:</b> the opening and closing balance are compared with the bank statement so you can trust the import.</li>
+      <li><b>Already posted some entries?</b> Tell the tool the last transaction you entered in Tally and it exports only what is left.</li>
+      <li><b>Locked PDFs:</b> password-protected statements can be unlocked inside the browser.</li>
+    </ul>
   </section>
 
   <div class="footnote">All parsing happens locally in your browser · no data is uploaded anywhere</div>
